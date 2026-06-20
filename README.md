@@ -188,3 +188,13 @@ This separation improves readability, maintainability, and scalability.
 ## Conclusion
 
 This project demonstrates how Node.js can interact with the operating system, environment variables, and file system through a modular CLI application while maintaining structured output and proper error handling.
+
+## Demo Screenshots
+
+### File Creation
+
+![File Creation](screenshots/demo1.png)
+
+### File Deletion
+
+![File Deletion](screenshots/demo2.png)
