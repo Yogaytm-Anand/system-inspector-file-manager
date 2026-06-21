@@ -1,51 +1,3 @@
-// const {
-//   createFile,
-//   readFile,
-//   updateFile,
-//   deleteFile
-// } = require("./services/fileManager");
-
-// const getEnvInfo = require("./services/envInfo");
-// const getSystemInfo = require("./services/systemInfo");
-
-// createFile(
-//   "sample.js",
-//   "console.log('Created by Thunder Hackathon');"
-// );
-
-// readFile("sample.js");
-
-// updateFile(
-//   "sample.js",
-//   "\nconsole.log('Updated Successfully');"
-// );
-
-// readFile("sample.js");
-
-// deleteFile("sample.js");
-
-// console.log({
-//   systemInfo: getSystemInfo(),
-//   environmentVariables: getEnvInfo()
-// });
-
-// console.log(process.argv);
-
-// const { createFile } = require("./services/fileManager");
-
-// const command = process.argv[2];
-// const fileName = process.argv[3];
-
-// console.log("Command:", command);
-// console.log("File:", fileName);
-
-// if (command === "create") {
-//   createFile(
-//     fileName,
-//     "console.log('Created through CLI');"
-//   );
-// }
-
 const fs = require("fs");
 
 const getSystemInfo = require("./services/systemInfo");
@@ -59,22 +11,6 @@ const {
   fileInfo
 } = require("./services/fileManager");
 
-// const report = {
-//   generatedAt: new Date().toISOString(),
-
-//   systemInfo: getSystemInfo(),
-
-//   environmentVariables: getEnvInfo()
-// };
-
-// console.log(JSON.stringify(report, null, 2));
-
-// fs.writeFileSync(
-//   "./reports/system-report.json",
-//   JSON.stringify(report, null, 2)
-// );
-
-// console.log("System report saved successfully.");
 
 const command = process.argv[2];
 const fileName = process.argv[3];
